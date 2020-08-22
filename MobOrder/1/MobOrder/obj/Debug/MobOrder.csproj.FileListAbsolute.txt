@@ -1,0 +1,11 @@
+M:\vs2017\MobOrder\MobOrder\bin\Debug\MobOrder.exe
+M:\vs2017\MobOrder\MobOrder\bin\Debug\MobOrder.pdb
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.csprojResolveAssemblyReference.cache
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.Blank.resources
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.Form1.resources
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.GroupForm.resources
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.Properties.Resources.resources
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.csproj.GenerateResource.cache
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.csproj.CoreCompileInputs.cache
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.exe
+M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.pdb
