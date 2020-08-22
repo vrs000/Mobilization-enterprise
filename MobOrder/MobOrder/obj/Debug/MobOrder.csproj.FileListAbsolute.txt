@@ -38,3 +38,12 @@ M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.csprojAssemblyReference.cache
 M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.EditBlank.resources
 M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.UpperMenuForms.DB_SettingsForm.resources
 M:\vs2017\MobOrder\MobOrder\obj\Debug\MobOrder.UpperMenuForms.ReferenceForm.resources
+M:\vs2017\MobOrder\MobOrder\bin\Debug\EntityFramework.dll
+M:\vs2017\MobOrder\MobOrder\bin\Debug\EntityFramework.SqlServer.dll
+M:\vs2017\MobOrder\MobOrder\bin\Debug\System.Data.SQLite.dll
+M:\vs2017\MobOrder\MobOrder\bin\Debug\System.Data.SQLite.EF6.dll
+M:\vs2017\MobOrder\MobOrder\bin\Debug\System.Data.SQLite.Linq.dll
+M:\vs2017\MobOrder\MobOrder\bin\Debug\EntityFramework.xml
+M:\vs2017\MobOrder\MobOrder\bin\Debug\EntityFramework.SqlServer.xml
+M:\vs2017\MobOrder\MobOrder\bin\Debug\System.Data.SQLite.xml
+M:\vs2017\MobOrder\MobOrder\bin\Debug\System.Data.SQLite.dll.config

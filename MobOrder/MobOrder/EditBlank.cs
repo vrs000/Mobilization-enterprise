@@ -175,7 +175,7 @@ namespace MobOrder
 
 
                 //Обновить БД
-                MySql.UpdateMemberInfo(OldMember, NewMember);
+                SQLite.UpdateMemberInfo(OldMember, NewMember);
 
 
 

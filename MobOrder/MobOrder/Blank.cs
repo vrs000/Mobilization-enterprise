@@ -83,7 +83,7 @@ namespace MobOrder
                     EditableControls.AddMemberToTab(GroupsArray.LastGroupName, member);
                 }
 
-                MySql.AddMemberToDB(GroupsArray.LastGroupName, member);
+                SQLite.AddMemberToDB(GroupsArray.LastGroupName, member);
 
                 this.Close();
             }

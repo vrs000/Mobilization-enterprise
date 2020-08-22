@@ -17,10 +17,7 @@ namespace MobOrder.UpperMenuForms
             InitializeComponent();
 
 
-            IpTextBox.Text = MySql.host;
-            PortTextBox.Text = MySql.port.ToString();
-            LoginTextBox.Text = MySql.username;
-            PasswordTextBox.Text = MySql.password;
+            PathTextBox.Text = SQLite.database;
 
         }
 

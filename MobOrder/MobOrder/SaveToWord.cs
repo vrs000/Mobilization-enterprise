@@ -6,6 +6,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Word = Microsoft.Office.Interop.Word;
 using System.Windows.Forms;
+using MobOrder.Properties;
 
 namespace MobOrder
 {

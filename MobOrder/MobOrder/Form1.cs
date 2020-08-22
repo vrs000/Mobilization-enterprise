@@ -19,7 +19,7 @@ namespace MobOrder
             EditableControls.GroupList = GroupList;
             EditableControls.GroupsTab = GroupsTab;
 
-            MySql.FirstInitialize();
+            SQLite.FirstInitialize();
 
             EditableControls.ResizeColumns();
 
@@ -112,7 +112,7 @@ namespace MobOrder
 
                     //TODO:
                     //Удалить из БД
-                    MySql.RemoveMemberFromDB(Group_Name, memb);
+                    SQLite.RemoveMemberFromDB(Group_Name, memb);
 
 
                     //Удалить из программного хранилища
@@ -167,7 +167,7 @@ namespace MobOrder
             {
                 CheckedGroupNames.Add(CheckedGroupName.ToString());
 
-                MySql.RemoveGroupFromDB(CheckedGroupName.ToString());
+                SQLite.RemoveGroupFromDB(CheckedGroupName.ToString());
 
             }
 

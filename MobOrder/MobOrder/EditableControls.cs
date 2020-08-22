@@ -74,11 +74,11 @@ namespace MobOrder
                         {
                             case 1:
                                 memb.FIO = listParams[1];
-                                MySql.UpdateMemberInfo("FIO", listParams[1], "Adress", listParams[4]);
+                                SQLite.UpdateMemberInfo("FIO", listParams[1], "Adress", listParams[4]);
                                 break;
                             case 2:
                                 memb.Rank = listParams[2];
-                                MySql.UpdateMemberInfo("_rank", listParams[2], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("_rank", listParams[2], "FIO", listParams[1]);
                                 break;
                             case 3:
                                 memb.YearOfBirth = listParams[3];
@@ -86,24 +86,24 @@ namespace MobOrder
                                 break;
                             case 4:
                                 memb.HomeAddress = listParams[4];
-                                MySql.UpdateMemberInfo("Adress", listParams[4], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("Adress", listParams[4], "FIO", listParams[1]);
 
                                 break;
                             case 5:
                                 memb.PlaceOfWork = listParams[5];
-                                MySql.UpdateMemberInfo("WorkPlace", listParams[5], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("WorkPlace", listParams[5], "FIO", listParams[1]);
                                 break;
                             case 6:
                                 memb.TurnoutAddress = listParams[6];
-                                MySql.UpdateMemberInfo("TurnoutAdress", listParams[6], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("TurnoutAdress", listParams[6], "FIO", listParams[1]);
                                 break;
                             case 7:
                                 memb.Company = listParams[7];
-                                MySql.UpdateMemberInfo("Company", listParams[7], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("Company", listParams[7], "FIO", listParams[1]);
                                 break;
                             case 8:
                                 memb.VusNumber = listParams[8];
-                                MySql.UpdateMemberInfo("Vus", listParams[8], "FIO", listParams[1]);
+                                SQLite.UpdateMemberInfo("Vus", listParams[8], "FIO", listParams[1]);
                                 break;
 
                             default:
@@ -169,7 +169,7 @@ namespace MobOrder
             var group = GroupsArray.FindGroup(GroupName);
             group.RemoveMember(member);
 
-            MySql.RemoveMemberFromDB(GroupName, member);
+            SQLite.RemoveMemberFromDB(GroupName, member);
 
             //MessageBox.Show("Deleted");
 
