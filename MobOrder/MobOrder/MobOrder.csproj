@@ -119,75 +119,76 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blank.cs">
+    <Compile Include="Views\Blank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Blank.Designer.cs">
+    <Compile Include="Views\Blank.Designer.cs">
       <DependentUpon>Blank.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataBaseLogic\DataBaseCommands.cs" />
+    <Compile Include="DataBaseLogic\SQLite.cs" />
     <Compile Include="EditableControls.cs" />
-    <Compile Include="EditBlank.cs">
+    <Compile Include="Views\EditBlank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditBlank.Designer.cs">
+    <Compile Include="Views\EditBlank.Designer.cs">
       <DependentUpon>EditBlank.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Group.cs" />
-    <Compile Include="GroupForm.cs">
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Views\GroupForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GroupForm.Designer.cs">
+    <Compile Include="Views\GroupForm.Designer.cs">
       <DependentUpon>GroupForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GroupsArray.cs" />
-    <Compile Include="Member.cs" />
-    <Compile Include="SQLite.cs" />
-    <Compile Include="PrintForm.cs">
+    <Compile Include="Models\GroupsArray.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Views\PrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrintForm.Designer.cs">
+    <Compile Include="Views\PrintForm.Designer.cs">
       <DependentUpon>PrintForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaveToWord.cs" />
-    <Compile Include="UpperMenuForms\AboutForm.cs">
+    <Compile Include="Views\UpperMenuForms\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpperMenuForms\AboutForm.Designer.cs">
+    <Compile Include="Views\UpperMenuForms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpperMenuForms\DB_SettingsForm.cs">
+    <Compile Include="Views\UpperMenuForms\DB_SettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpperMenuForms\DB_SettingsForm.Designer.cs">
+    <Compile Include="Views\UpperMenuForms\DB_SettingsForm.Designer.cs">
       <DependentUpon>DB_SettingsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpperMenuForms\ReferenceForm.cs">
+    <Compile Include="Views\UpperMenuForms\ReferenceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpperMenuForms\ReferenceForm.Designer.cs">
+    <Compile Include="Views\UpperMenuForms\ReferenceForm.Designer.cs">
       <DependentUpon>ReferenceForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Blank.resx">
+    <EmbeddedResource Include="Views\Blank.resx">
       <DependentUpon>Blank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditBlank.resx">
+    <EmbeddedResource Include="Views\EditBlank.resx">
       <DependentUpon>EditBlank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GroupForm.resx">
+    <EmbeddedResource Include="Views\GroupForm.resx">
       <DependentUpon>GroupForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrintForm.resx">
+    <EmbeddedResource Include="Views\PrintForm.resx">
       <DependentUpon>PrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -200,10 +201,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UpperMenuForms\DB_SettingsForm.resx">
+    <EmbeddedResource Include="Views\UpperMenuForms\DB_SettingsForm.resx">
       <DependentUpon>DB_SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpperMenuForms\ReferenceForm.resx">
+    <EmbeddedResource Include="Views\UpperMenuForms\ReferenceForm.resx">
       <DependentUpon>ReferenceForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
@@ -218,7 +219,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Resources\template.docx" />
-    <None Include="template.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1.png" />
@@ -227,10 +227,8 @@
     <None Include="Resources\1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\kisspng-check-mark-x-mark-clip-art-check-marks-5a7c0970394fe9.8780805115180783202348.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\krasnyj-krestik-pngfon.png" />
+    <Content Include="Resources\kisspng-check-mark-x-mark-clip-art-check-marks-5a7c0970394fe9.8780805115180783202348.jpg" />
+    <Content Include="Resources\krasnyj-krestik-pngfon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

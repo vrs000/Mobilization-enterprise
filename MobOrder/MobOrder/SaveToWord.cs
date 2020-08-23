@@ -12,11 +12,10 @@ namespace MobOrder
 {
     public static class SaveToWord
     {
-        //@".\UIResources.resx
-        //private static readonly string TemplatePath = "M://vs2017/MobOrder/MobOrder/template.docx";
+
+
         private static readonly string TemplatePath = @"M:\vs2017\MobOrder\MobOrder\Resources\template.docx";
         private static readonly string Path = @"M:\vs2017\MobOrder\MobOrder\Resources\";
-        private static string FileName = "template1";
         private static Word.Application app;
         private static Object missing = Type.Missing;
 
@@ -61,7 +60,9 @@ namespace MobOrder
         public static void SaveMember(string[] list)
         {
             var CurrentDate = DateTime.Now;
-            string ResultFileName = $"{CurrentDate.Hour}_{CurrentDate.Minute}_{CurrentDate.Second}_{CurrentDate.Day}_{CurrentDate.Month}_{CurrentDate.Year}.docx";
+            string ResultFileName = $"{CurrentDate.Hour}_{CurrentDate.Minute}" +
+                $"_{CurrentDate.Second}_{CurrentDate.Day}" +
+                $"_{CurrentDate.Month}_{CurrentDate.Year}.docx";
             //Сохранить для печати одного человека
 
             /* Word.Application*/
@@ -125,7 +126,7 @@ namespace MobOrder
             }
             MainDoc.Save();
             MainDoc.Close();
-            //Заполнили
+            
 
 
             //Заполняем файлы с 1-го по N
@@ -156,25 +157,18 @@ namespace MobOrder
             MainDoc = app.Documents.Open(Path + ResultFileName);
             //Начинаем объединять
 
-            //int n = 35;
-            //doc.Paragraphs[n].Range.InsertFile(fileName);
-            //doc.Paragraphs[n + 34].Range.InsertFile(fileName);
-            //doc.Paragraphs[n + 34 + 34].Range.InsertFile(fileName);
-
-            int n = 35;
-            //int j_ = 0;
-
-            //MainDoc.Paragraphs[n + j_ * 34].Range.InsertFile(Path + FileNames[j_]);
-
+          
+            
+          
             for (int i = 0; i < FileNames.Count; i++)
             {
                 try
                 {
-                    MainDoc.Paragraphs[n + i * 34].Range.InsertFile(Path + FileNames[i]);
+                    MainDoc.Paragraphs[35 + i * 34].Range.InsertFile(Path + FileNames[i]);
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show((n + i * 34).ToString());
+                    MessageBox.Show((35 + i * 34).ToString());
                 }
 
             }
@@ -192,12 +186,9 @@ namespace MobOrder
             }
 
             MessageBox.Show(FinalMessage);
-
-
-
         }
 
-       
+
 
 
     }

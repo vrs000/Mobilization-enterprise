@@ -69,36 +69,5 @@ namespace MobOrder.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap kisspng_check_mark_x_mark_clip_art_check_marks_5a7c0970394fe9_8780805115180783202348 {
-            get {
-                object obj = ResourceManager.GetObject("kisspng-check-mark-x-mark-clip-art-check-marks-5a7c0970394fe9.8780805115180783202" +
-                        "348", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap krasnyj_krestik_pngfon {
-            get {
-                object obj = ResourceManager.GetObject("krasnyj-krestik-pngfon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
-        /// </summary>
-        internal static byte[] template {
-            get {
-                object obj = ResourceManager.GetObject("template", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
