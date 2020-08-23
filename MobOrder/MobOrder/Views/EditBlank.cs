@@ -44,10 +44,18 @@ namespace MobOrder
             var date = row.Cells[3].Value.ToString();
             int year, month, day;
 
-            year = Convert.ToInt32(date.Split('.')[2]);
-            month = Convert.ToInt32(date.Split('.')[1]);
-            day = Convert.ToInt32(date.Split('.')[0]);
-
+            try
+            {
+                year = Convert.ToInt32(date.Split('-')[0]);
+                month = Convert.ToInt32(date.Split('-')[1]);
+                day = Convert.ToInt32(date.Split('-')[2]);
+            }
+            catch(Exception)
+            {
+                year = Convert.ToInt32(date.Split('.')[2]);
+                month = Convert.ToInt32(date.Split('.')[1]);
+                day = Convert.ToInt32(date.Split('.')[0]);
+            }
 
             DateOfBirth.Value = new DateTime(year, month, day);
             HomeAdresstextBox.Text = row.Cells[4].Value.ToString();

@@ -77,8 +77,9 @@ namespace MobOrder
         }
         public static string UpdateMemberInfo(Member OldMember, Member NewMember)
         {
-            var date1 = OldMember.YearOfBirth.Split('.');
-            var date2 = NewMember.YearOfBirth.Split('.');
+            var date1 = OldMember.YearOfBirth.Contains(".") ? OldMember.YearOfBirth.Split('.') : OldMember.YearOfBirth.Split('-');
+            var date2 = NewMember.YearOfBirth.Contains(".") ? NewMember.YearOfBirth.Split('.') : NewMember.YearOfBirth.Split('-');
+            
 
 
             string query = $"update listmembers " +
