@@ -3,11 +3,6 @@ Designed to automate routine tasks
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<style type="text/css">
-		p{
-			text-align: center;
-		}
-	</style>
 </head>
 <body> 
 	<p>
