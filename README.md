@@ -7,7 +7,7 @@ Designed to automate routine tasks
 <body> 
 	<p>
 		<p><h2>Info</h2></p>
-		<p><img src="images/2.PNG"></p>
+		<p style="text-align: center;"><img src="images/2.PNG"></p>
 		<p>The program is designed to optimize the work with a database consisting of people registered with the military commissariat, as well as to form agendas according to a given template in .docx format.</p>
 	</p>
 	<p>
